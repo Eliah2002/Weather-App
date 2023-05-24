@@ -19,9 +19,9 @@ A simple weather application that allows users to check the current weather cond
 - The application will display the current weather conditions for the entered city.
 - If the entered city is not found, an error message will be displayed.
 
-![London](images/Weather-App.Picture1.png?raw=true "London")
-![Munich](images/Weather-App.Picture2.png?raw=true "Munich")
-![Oimjakon](images/Weather-App.Picture3.png?raw=true "Oimjakon")
+<img src="images/Weather-App.Picture1.png" width=30% height=30%>
+<img src="images/Weather-App.Picture2.png" width=30% height=30%>
+<img src="images/Weather-App.Picture3.png" width=30% height=30%>
 
 # API Key
 The Weather App uses the OpenWeatherMap API to retrieve weather data. To use the application, you need to obtain an API key from OpenWeatherMap and replace the apiKey variable in the app.js file with your own API key.
