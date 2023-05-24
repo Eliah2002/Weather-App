@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --color-default: linear-gradient(135deg, #373737, #7b7b7b);         /* set by default */
+    --color-extrem-cold: linear-gradient(135deg, #4b73e4, #e9feff);     /* less than (-10)°C */
+    --color-cold: linear-gradient(135deg, #08a9e9, #ffffff);            /* (-10)°C - 4°C */
+    --color-normal: linear-gradient(135deg, #78f107, #13d1b8);          /* 4°C - 18°C */
+    --color-hot: linear-gradient(135deg, #ff5e00, #e7eb0c);             /* 18°C - 30°C */
+    --color-extrem-hot: linear-gradient(135deg, #ff1e00, #e08d10);      /* more than 30°C */
+}
+body {
+    background: #222;
+}
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: var(--color-default);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+/* Search Section */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    padding-top: 7px ;
+}
+.search button i {
+    font-size: 22px;
+}
+/* Error Message */
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+/* Current Weather Section */
+.date-time {
+    margin-top: 20px;
+}
+#weather-icon {
+    font-size: 90px;
+    margin-top: 10px;
+}
+.temp {
+    font-size: 80px;
+    font-weight: 500;
+}
+.condition, .city {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.temp-feelslike {
+    display: flex;
+    justify-content: center;
+}
+/* Humidity and Wind Section */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img {
+    width: 40px;
+    margin-right: 15px;
+}
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather {
+    display: none;
+}
+/* Footer Section */
+.footer {
+    margin-top: 40px;
+    margin-bottom: -30px;
+}

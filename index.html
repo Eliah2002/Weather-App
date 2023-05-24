@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wetter App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts connection-link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome connection-link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+
+    <!--  Current Weather Page -->
+
+    <div class="card">
+      <!--  Search Section -->
+      <header class="search">
+        <input
+          type="text"
+          placeholder="Gebe eine Stadt ein..."
+          spellcheck="false"
+        />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </header>
+      <!--  Error Message if Incorrect city name -->
+      <div class="error">
+        <p>Incorrect city name</p>
+      </div>
+      <!--  Current Weather Section -->
+      <main class="weather">
+        <p class="date-time"></p>
+        <h2 class="condition"></h2>
+        <i class="fa-solid fa-cloud-rain" id="weather-icon"></i>
+        <h1 class="temp"></h1>
+        <h3 class="temp-feelslike"></h3>
+        <h2 class="city"></h2>
+        <!--  Humidity and Wind Section -->
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+        <!--  Footer -->
+        <footer class="footer">
+          <p>Copyright <i class="fa-solid fa-copyright" id="copyright-icon"></i> Eliah Seregi</p>
+        </footer>
+      </main>
+    </div>
+
+    <!-- Script -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
